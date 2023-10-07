@@ -1,6 +1,25 @@
+/* Edited by Shawn Jordan */
+
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
+/* modify header for background color */
+header {
+    background-color: #000033; /* set to match left of sunset image */
+    background-image: url('sunset.jpg');
+    background-size: auto 100%; /* maintain image aspect ratio */
+    background-repeat: no-repeat; /* use only one image */
+    background-position: right;
+    color: white; /* text color */
+}
+/* make contents 80% of page, min 600px */
+#wrapper {
+    max-width: 80%;
+    min-width: 600px;
+    margin: auto; /* center on page */
+    
+}
+
 body {
 	background-color: ;
 	color: #666666;
