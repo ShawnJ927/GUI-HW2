@@ -1,5 +1,10 @@
-/* Edited by Shawn Jordan */
-
+/*File: pacific.css
+    GUI Assignment: CSS HW2
+    Shawn Jordan, UMass Lowell Computer Science, shawn_jordan@student.uml.edu
+    Copyright (c) 2023 by Shawn. 
+    All rights reserved.
+    Modified Assignment by Shawn Jordan
+    updated by WZ on Oct 7, 2023 at 11:19 PM */
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
