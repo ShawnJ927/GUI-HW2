@@ -5,18 +5,18 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 }
 /* modify header for background color */
 header {
+    grid-area: header;
     background-color: #000033; /* set to match left of sunset image */
     background-image: url('sunset.jpg');
     background-size: auto 100%; /* maintain image aspect ratio */
     background-repeat: no-repeat; /* use only one image */
     background-position: right;
     color: white; /* text color */
-    grid-area: header;
 }
+
 /* make contents 80% of page, min 600px */
 #wrapper {
     display: grid; /* layout splits into columns */
-    grid-template-rows: auto 1fr; /* header takes up its height, the rest is filled by the content */
     grid-template-columns: 200px 1fr; /* layout 200px to left, rest is auto width */
     grid-template-areas:
         "header header"
@@ -25,20 +25,37 @@ header {
     max-width: 80%;
     min-width: 600px;
     margin: auto; /* center on page */
-    margin-bottom: 10%;
     background-color: white;
 }
 /* Navigation side */
 nav {
     grid-area: nav;
-    background-color: #3399CC;
+    background-color: #61b6e0;
 }
+/* main content area */
 #content {
     grid-area: content;
-    padding: 5%; /* create space around the content */
+    padding-left: 20px; /* create space around the content */
+    padding-right: 20px;
 }
+/* content bullet point list */
 #content ul li {
     list-style-image: url('marker.gif');
+    list-style-position: inside;
+}
+
+/* content image */
+#content img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#content p {
+    overflow: hidden;
+}
+.resort {
+    font-weight: bold;
+    color: #1c6b93;
 }
 body {
 	background-image: url('ptrbackground.jpg');
@@ -56,7 +73,7 @@ nav ul a{
     color: black;
 }
 nav a:visited {
-	color: #344873;
+	color: #FFFFFF;
 }
 
 nav a:hover {
@@ -87,6 +104,9 @@ dt {
 footer {
     grid-area: footer;
 	font-family: Georgia, "Times New Roman", serif;
-    padding: 5%;
+    padding: 20px;
+    background-color: white;
+    font-style: italic;
+    font-size: 80%;
 }
 
